@@ -14,12 +14,6 @@ export const Script = {
     tabs
 };
 
-function custom() {
-    const custom_script = document.createElement("script");
-    custom_script.src = "/assets/js/custom.js";
-    document.body.appendChild(custom_script);
-}
-
 function autocomplete() {
     let elems = document.querySelectorAll('.autocomplete');
     let options = {
