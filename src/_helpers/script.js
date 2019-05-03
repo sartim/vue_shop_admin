@@ -2,7 +2,6 @@ import * as M from "../../assets/admin-assets/js/materialize.min";
 
 
 export const Script = {
-    custom,
     autocomplete,
     fab,
     collapse,
