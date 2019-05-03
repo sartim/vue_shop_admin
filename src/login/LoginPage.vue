@@ -12,7 +12,7 @@
                   <i class="material-icons prefix pt-5">person_outline</i>
                   <input id="email" type="text" v-model="email" name="email" class="form-control" :class="{ 'is-invalid': submitted && !email }" />
                   <div v-show="submitted && !email" class="invalid-feedback">Email is required</div>
-                  <label for="email">email</label>
+                  <label for="email">Email</label>
                 </div>
               </div>
               <div class="row margin">
