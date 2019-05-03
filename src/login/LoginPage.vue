@@ -4,8 +4,7 @@
           <form class="login-form" name="form"  @submit.prevent="handleSubmit">
               <div class="row">
                 <div class="input-field col s12 center">
-                  <!--<img src="" alt="" />-->
-                  <!--<p class="center login-form-text"></p>-->
+                  <p class="center login-form-text">LOGIN</p>
                 </div>
               </div>
               <div class="row margin">
