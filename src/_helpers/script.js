@@ -19,7 +19,7 @@ export const Script = {
 
 function encrypt(val) {
     // Encrypt string
-    return CryptoJS.AES.encrypt(JSON.stringify(val), 'add_supper_secret');
+    return CryptoJS.AES.encrypt(JSON.stringify(val), 'super-dupah-secret');
 }
 
 function decrypt(ciphertext) {
