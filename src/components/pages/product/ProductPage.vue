@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col s12">
                             <table>
-                                <table class="responsive-table striped highlight">
+                                <table class="responsive-table striped highlight" v-if="products.items.results">
                                     <thead>
                                     <tr>
                                         <th>ID</th>
@@ -20,12 +20,12 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tr v-for="product in products.items.results" :key="product.id">
+                                        <td>{{product.id}}</td>
+                                        <td>{{product.name}}</td>
+                                        <td>{{product.category}}</td>
+                                        <td>{{product.items}}</td>
+                                        <td>{{product.created_date}}</td>
                                         <td>
                                             <button class="btn">Manage</button>
                                         </td>
@@ -46,14 +46,22 @@ import LeftSideNav from '../../layouts/nav/LeftSideNav';
 import TopHeader from '../../layouts/header/TopHeader';
 
 export default {
+    components: {
+        TopHeader,
+        LeftSideNav
+    },
+    computed: {
+        products () {
+            return this.$store.state.products.all;
+        }
+    },
     beforeCreate() {
         document.body.style.display = "block";
         document.documentElement.style.display = "block";
         document.body.style.backgroundColor = "#f9f9f9";
     },
-    components: {
-        TopHeader,
-        LeftSideNav
+    created () {
+        this.$store.dispatch('products/getAll');
     }
 };
 </script>
