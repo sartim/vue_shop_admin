@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HomePage from '../components/pages/home/HomePage'
-import LoginPage from '../components/pages/login/LoginPage'
+import HomePage from '../components/pages/home/HomePage';
+import LoginPage from '../components/pages/login/LoginPage';
+import ProductListPage from '../components/pages/product/ProductPage';
 
 Vue.use(Router);
 
@@ -10,7 +11,7 @@ export const router = new Router({
   routes: [
     { path: '/', component: HomePage },
     { path: '/login', component: LoginPage },
-    // { path: '/product/list', component: ProductListPage },
+    { path: '/product/list', component: ProductListPage },
     // { path: '/order/list', component: OrderListPage },
     // { path: '/user/list', component: UserListPage },
     // { path: '/profile', component: ProfilePage },
