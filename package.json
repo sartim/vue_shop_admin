@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@amcharts/amcharts4": "^4.4.3",
+    "crypto-js": "^3.1.9-1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vue-socket.io": "^3.0.7",
