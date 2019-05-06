@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col s12">
                             <table>
-                                <table class="responsive-table striped highlight" v-if="products.items.results">
+                                <table class="responsive-table striped highlight" v-if="products.items">
                                     <thead>
                                     <tr>
                                         <th>ID</th>
