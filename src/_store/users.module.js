@@ -27,4 +27,4 @@ export const users = {
             state.all = { error };
         }
     }
-}
+};
