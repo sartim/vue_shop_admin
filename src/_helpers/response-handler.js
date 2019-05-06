@@ -7,9 +7,10 @@ export function handleResponse(response) {
                 logout();
                 location.reload(true);
             }
-            const error = (data && data.non_field_errors) || response.statusText;
+            const error = (data && data.message) || response.statusText;
             return Promise.reject(error);
         }
+
         return data;
     });
 }
