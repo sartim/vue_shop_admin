@@ -1,7 +1,10 @@
 import * as M from "../../assets/admin-assets/js/materialize.min";
+import * as CryptoJS from 'crypto-js';
 
 
 export const Script = {
+    encrypt,
+    decrypt,
     autocomplete,
     fab,
     collapse,
@@ -12,6 +15,18 @@ export const Script = {
     maximizeSideNav,
     tabs
 };
+
+
+function encrypt(val) {
+    // Encrypt string
+    return CryptoJS.AES.encrypt(JSON.stringify(val), 'add_supper_secret');
+}
+
+function decrypt(ciphertext) {
+    // Decrypt string
+    const bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'super-dupah-secret');
+    return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+}
 
 function autocomplete() {
     let elems = document.querySelectorAll('.autocomplete');
