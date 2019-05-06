@@ -83,6 +83,7 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 am4core.useTheme(am4themes_animated);
 
 export default {
+    name: 'Dashboard',
     beforeCreate() {
         document.body.style.display = "block";
         document.documentElement.style.display = "block";
@@ -92,7 +93,6 @@ export default {
         TopHeader,
         LeftSideNav
     },
-    name: 'HelloWorld',
     mounted() {
         let chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
 
