@@ -3,10 +3,10 @@ import { authHeader } from '../_helpers';
 import {handleResponse} from "../_helpers/response-handler";
 
 export const productService = {
-    getProducts
+    getAll
 };
 
-function getProducts() {
+function getAll() {
     const requestOptions = {
         method: 'GET',
         headers: authHeader()
