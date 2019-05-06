@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-
-import HomePage from '../home/HomePage'
-import LoginPage from '../login/LoginPage'
+import HomePage from '../components/pages/home/HomePage'
+import LoginPage from '../components/pages/login/LoginPage'
 
 Vue.use(Router);
 
@@ -11,6 +10,12 @@ export const router = new Router({
   routes: [
     { path: '/', component: HomePage },
     { path: '/login', component: LoginPage },
+    // { path: '/product/list', component: ProductListPage },
+    // { path: '/order/list', component: OrderListPage },
+    // { path: '/user/list', component: UserListPage },
+    // { path: '/profile', component: ProfilePage },
+    // { path: '/settings', component: SettingPage },
+    // { path: '/search', component: SearchPage },
 
     // otherwise redirect to home
     { path: '*', redirect: '/' }
@@ -28,4 +33,4 @@ router.beforeEach((to, from, next) => {
   }
 
   next();
-})
+});
