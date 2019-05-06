@@ -45,28 +45,28 @@
                         <div class="collapsible-body">
                             <ul>
                                 <li>
-                                    <a to="/order/pending">
+                                    <router-link to="/order/pending">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>Pending</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                                 <li>
-                                    <a to="/order/in-progress">
+                                    <router-link to="/order/in-progress">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>In progress</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                                 <li>
-                                    <a to="/order/delivered">
+                                    <router-link to="/order/delivered">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>Delivered</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                                 <li>
-                                    <a to="/order/all">
+                                    <router-link to="/order/all">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>All</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                             </ul>
                         </div>
@@ -79,16 +79,16 @@
                         <div class="collapsible-body">
                             <ul>
                                 <li>
-                                    <a to="/product/list">
+                                    <router-link to="/product/list">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>List</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                                 <li>
-                                    <a to="/product/report">
+                                    <router-link to="/product/report">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>Report</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                             </ul>
                         </div>
@@ -101,16 +101,16 @@
                         <div class="collapsible-body">
                             <ul>
                                 <li>
-                                    <a to="/user/list">
+                                    <router-link to="/user/list">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>User List</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                                 <li>
-                                    <a to="/user/role">
+                                    <router-link to="/user/role">
                                     <i class="material-icons">keyboard_arrow_right</i>
                                     <span>User Roles</span>
-                                    </a>
+                                    </router-link>
                                 </li>
                             </ul>
                         </div>
@@ -121,16 +121,16 @@
                 <p class="ultra-small margin more-text">MORE</p>
             </li>
             <li>
-                <a to="/profile">
+                <router-link to="/profile">
                 <i class="material-icons">account_circle</i>
                 <span class="nav-text">Profile</span>
-                </a>
+                </router-link>
             </li>
             <li>
-                <a to="/settings">
+                <router-link to="/settings">
                 <i class="material-icons">settings</i>
                 <span class="nav-text">Settings</span>
-                </a>
+                </router-link>
             </li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger sidebar-collapse btn-floating btn-medium hide-on-large-only gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">menu</i></a>
