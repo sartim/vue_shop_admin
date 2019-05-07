@@ -68,6 +68,14 @@ export default {
             return this.$store.state.authentication.status.loggingIn;
         }
     },
+    beforeCreate() {
+        document.body.style.height = "100%";
+        document.body.style.display = "table-cell";
+        document.body.style.backgroundColor = "#0098e1";
+        document.body.style.verticalAlign = "middle";
+        document.documentElement.style.display = "table";
+        document.documentElement.style.margin = "auto";
+    },
     created () {
         // reset login status
         this.$store.dispatch('authentication/logout');
