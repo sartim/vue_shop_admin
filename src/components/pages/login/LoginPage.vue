@@ -49,12 +49,6 @@
 </template>
 
 <script>
-document.body.style.height = "100%";
-document.body.style.display = "table-cell";
-document.body.style.backgroundColor = "#0098e1";
-document.body.style.verticalAlign = "middle";
-document.documentElement.style.display = "table";
-document.documentElement.style.margin = "auto";
 export default {
     data () {
         return {
