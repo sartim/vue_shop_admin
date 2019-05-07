@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div style="padding: 13px">
                             <div class="card-panel">
                                 <div class="card-title"><h5>Daily Orders</h5></div>
                                 <div class="card-content">
