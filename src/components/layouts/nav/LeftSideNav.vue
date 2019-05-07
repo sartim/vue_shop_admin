@@ -146,7 +146,8 @@ export default {
     },
     computed: {
         user () {
-            return this.$store.state.authentication.user;
+            const decryptedData = Script.decrypt(this.$store.state.authentication.user);
+            return JSON.parse(decryptedData);
         }
     },
     created () {
