@@ -16,7 +16,7 @@
                 <a to="/profile">
                 <img src="/assets/admin-assets/img/default_user.png"
                      class="side-user-img responsive" />
-                <span class="side-user-name">{{user.user.full_name}}</span>
+                <span class="side-user-name" v-if="user">{{user.user.full_name}}</span>
                 </a>
             </li>
             <li class="no-padding">
@@ -138,7 +138,8 @@
 </template>
 
 <script>
-import {Script} from "../../../_helpers/script";
+import { Script } from "../../../_helpers/script";
+import { Encipher } from "../../../_helpers/encipher";
 
 export default {
     mounted() {
@@ -146,8 +147,8 @@ export default {
     },
     computed: {
         user () {
-            const decryptedData = Script.decrypt(this.$store.state.authentication.user);
-            return JSON.parse(decryptedData);
+            console.log(process.env.NODE_ENV);
+            return Encipher.decrypt(this.$store.state.authentication.user, 'object');
         }
     },
     created () {
