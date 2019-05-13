@@ -33,3 +33,7 @@ Vue Shop Admin Dashboard. Content management system for managing an online shop 
     
     $ npm run build:dev
     $ npm run build:prod
+
+**Run unittests
+
+    $ npm test
