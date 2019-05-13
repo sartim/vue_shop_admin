@@ -1,7 +1,7 @@
 import config from 'config';
 import { authHeader } from '../_helpers';
 import { handleResponse } from "../_helpers/response-handler";
-import {Script} from "../_helpers/script";
+import { Encipher } from "../_helpers/encipher";
 
 export const userService = {
     login,
@@ -23,7 +23,7 @@ function login(email, password) {
             if (user.access_token) {
                 // Encrypt data before storing user details and jwt token in local storage
                 // to keep user logged in between page refreshes
-                const cipher_txt = Script.encrypt(JSON.stringify(user));
+                const cipher_txt = Encipher.encrypt(user, 'object');
                 localStorage.setItem('user', cipher_txt)
             }
             return user;
