@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import HomePage from '../components/pages/home/HomePage';
 import LoginPage from '../components/pages/login/LoginPage';
 import ProductListPage from '../components/pages/product/ProductListPage';
+import CompletedOrderListPage from '../components/pages/order/CompletedOrderListPage';
+
 
 Vue.use(Router);
 
@@ -12,7 +14,7 @@ export const router = new Router({
     { path: '/', component: HomePage },
     { path: '/login', component: LoginPage },
     { path: '/product/list', component: ProductListPage },
-    // { path: '/order/list', component: OrderListPage },
+    { path: '/order/completed', component: CompletedOrderListPage },
     // { path: '/user/list', component: UserListPage },
     // { path: '/profile', component: ProfilePage },
     // { path: '/settings', component: SettingPage },
