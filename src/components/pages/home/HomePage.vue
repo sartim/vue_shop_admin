@@ -84,14 +84,14 @@ am4core.useTheme(am4themes_animated);
 
 export default {
     name: 'Dashboard',
+    components: {
+        TopHeader,
+        LeftSideNav
+    },
     beforeCreate() {
         document.body.style.display = "block";
         document.documentElement.style.display = "block";
         document.body.style.backgroundColor = "#f9f9f9";
-    },
-    components: {
-        TopHeader,
-        LeftSideNav
     },
     mounted() {
         let chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
