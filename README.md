@@ -1,6 +1,7 @@
-## ReactJS Shop Admin
+## VueJS Shop Admin
 
 [![version](https://img.shields.io/badge/version-v0.0.1-orange.svg?style=flat)](https://github.com/sartim/vue_shop_admin/issues)
+[![Build Status](https://travis-ci.com/sartim/vue_shop_admin.svg?branch=master)](https://github.com/sartim/vue_shop_admin)
 
 Vue Shop Admin Dashboard. Content management system for managing an online shop for products which is also a web socket client. To run the server source code locally which is also the web socket client use [this](https://github.com/sartim/flask_shop_api.git) repo
 
