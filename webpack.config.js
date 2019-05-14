@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
+
 
 module.exports = {
     mode: 'development',
@@ -20,11 +22,9 @@ module.exports = {
             }
         ]
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: './src/index.html'
-    }), new CopyWebpackPlugin([
-        { from: 'assets', to: 'assets' }
-    ])],
+    plugins: [
+        new HtmlWebpackPlugin({template: './src/index.html'}),
+        new CopyWebpackPlugin([{ from: 'assets', to: 'assets' }])],
     devServer: {
         historyApiFallback: true
     },
