@@ -1,8 +1,8 @@
-import {Script} from "./script";
+import {Encipher} from "./encipher";
 
 export function authHeader() {
     // return authorization header with jwt token
-    let user = JSON.parse(Script.decrypt(localStorage.getItem('user')));
+    let user = Encipher.decrypt(localStorage.getItem('user'), 'object');
     if (user && user.access_token) {
         return { 'Authorization': 'Bearer ' + user.access_token };
     } else {
