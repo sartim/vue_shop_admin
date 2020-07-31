@@ -35,7 +35,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-vue": "^2.0.2",
     "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^0.28.11",
+    "css-loader": "^4.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "expect": "^24.8.0",
