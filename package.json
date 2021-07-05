@@ -42,7 +42,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jsdom": "^15.1.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^6.1.4",
+    "mocha": "^9.0.2",
     "mocha-webpack": "^2.0.0-beta.0",
     "path": "^0.12.7",
     "vue-loader": "^14.2.4",
